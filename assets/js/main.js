@@ -56,8 +56,7 @@
 
         contactForm: function () {
             $('.rwt-dynamic-form').on('submit', function (e) {
-				e.preventDefault();
-				var _self = $(this);
+				e.preventDefault();var _self = $(this);
 				var __selector = _self.closest('input,textarea');
 				_self.closest('div').find('input,textarea').removeAttr('style');
 				_self.find('.error-msg').remove();
